@@ -45,5 +45,10 @@ export class Nota{
         return this.fechaPublicacion
     }
 
-    
+    /**
+    public agregarALibretaDeNotas(nota : Nota, libretaDeNotass : Nota[]) : Nota[]{
+        libretaDeNotass.push(nota)
+        return libretaDeNotass
+    }
+    */
 }
