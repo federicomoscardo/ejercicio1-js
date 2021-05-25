@@ -1,6 +1,6 @@
-import {Autor} from "./Autor"
+import Autor from "./Autor"
 
-export class Nota{
+class Nota{
     private titulo : String
     private autor : Autor
     private cuerpoNota : String
@@ -15,18 +15,22 @@ export class Nota{
 
     public setTitulo(titulo : String){
         this.titulo = titulo
+        return this
     }
 
     public setAutor(autor : Autor){
         this.autor = autor
+        return this
     }
 
     public setCuerpoNota(cuerpoNota : String){
         this.cuerpoNota = cuerpoNota
+        return this
     }
 
     public setFechaPublicacion(fechaPublicacion : String){
         this.fechaPublicacion = fechaPublicacion
+        return this
     }
 
     public getTitulo() : String{
@@ -52,3 +56,5 @@ export class Nota{
     }
     */
 }
+
+export default Nota

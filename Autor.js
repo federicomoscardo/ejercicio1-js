@@ -1,6 +1,5 @@
 "use strict";
 exports.__esModule = true;
-exports.Autor = void 0;
 var Autor = /** @class */ (function () {
     function Autor() {
         this.nombre = new String;
@@ -10,15 +9,19 @@ var Autor = /** @class */ (function () {
     }
     Autor.prototype.setNombre = function (nombre) {
         this.nombre = nombre;
+        return this;
     };
     Autor.prototype.setApellido = function (apellido) {
         this.apellido = apellido;
+        return this;
     };
     Autor.prototype.setGeneroEscritura = function (generoEscritura) {
         this.generoEscritura = generoEscritura;
+        return this;
     };
     Autor.prototype.setCantidadPublicaciones = function (cantidadPublicaciones) {
         this.cantidadPublicaciones = cantidadPublicaciones;
+        return this;
     };
     Autor.prototype.getNombre = function () {
         return this.nombre;
@@ -32,6 +35,9 @@ var Autor = /** @class */ (function () {
     Autor.prototype.getCantidadPublicaciones = function () {
         return this.cantidadPublicaciones;
     };
+    Autor.prototype.getNombreCompleto = function () {
+        return this.nombre + ' ' + this.apellido;
+    };
     return Autor;
 }());
-exports.Autor = Autor;
+exports["default"] = Autor;

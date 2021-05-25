@@ -1,4 +1,4 @@
-export class Autor {
+class Autor {
     private nombre: String
     private apellido: String
     private generoEscritura: String
@@ -13,18 +13,22 @@ export class Autor {
 
     public setNombre(nombre: String){
         this.nombre = nombre
+        return this
     }
 
     public setApellido(apellido: String){
         this.apellido = apellido
+        return this
     }
 
     public setGeneroEscritura(generoEscritura: String){
         this.generoEscritura = generoEscritura
+        return this
     }
 
     public setCantidadPublicaciones(cantidadPublicaciones: Number){
         this.cantidadPublicaciones = cantidadPublicaciones
+        return this
     }
 
     public getNombre() : String{
@@ -43,8 +47,14 @@ export class Autor {
         return this.cantidadPublicaciones
     }
 
+    public getNombreCompleto() : String {
+        return this.nombre + ' ' + this.apellido
+    }
+
     
 }
+
+export default Autor
 
 
 
