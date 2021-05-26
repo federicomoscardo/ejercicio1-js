@@ -1,10 +1,9 @@
 "use strict";
 exports.__esModule = true;
-var Autor_1 = require("./Autor");
 var Nota = /** @class */ (function () {
-    function Nota() {
+    function Nota(autor) {
+        this.autor = autor;
         this.titulo = new String;
-        this.autor = new Autor_1["default"];
         this.cuerpoNota = new String;
         this.fechaPublicacion = new String;
     }
