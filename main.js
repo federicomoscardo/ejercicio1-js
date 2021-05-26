@@ -20,21 +20,18 @@ var autor2 = new Autor_1["default"]()
 var libretaDeNotas = new Libreta_de_Notas_1["default"]();
 //Instanciamiento de Notas
 //------------------------------------------------------------------------------------------------------------
-var nota1 = new Nota_1["default"]()
+var nota1 = new Nota_1["default"](autor1)
     .setTitulo('Estreno temporada en NETFLIX: Quién mató a Sara')
-    .setAutor(autor1)
     .setCuerpoNota('...')
     .setFechaPublicacion('10/05/2021');
 libretaDeNotas.agregarNota(nota1);
-var nota2 = new Nota_1["default"]()
+var nota2 = new Nota_1["default"](autor1)
     .setTitulo('Fecha lanzamiento: 4ta temporada de La casa de papel')
-    .setAutor(autor1)
     .setCuerpoNota('...')
     .setFechaPublicacion('20/05/2021');
 libretaDeNotas.agregarNota(nota2);
-var nota3 = new Nota_1["default"]()
+var nota3 = new Nota_1["default"](autor2)
     .setTitulo('Novadedes sobre coronavirus en Europa')
-    .setAutor(autor2)
     .setCuerpoNota('...')
     .setFechaPublicacion('21/05/2021');
 libretaDeNotas.agregarNota(nota3);

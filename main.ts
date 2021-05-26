@@ -24,25 +24,22 @@ let libretaDeNotas = new LibretaDeNotas()
 
 //Instanciamiento de Notas
 //------------------------------------------------------------------------------------------------------------
-var nota1 = new Nota()
+var nota1 = new Nota(autor1)
     .setTitulo('Estreno temporada en NETFLIX: Quién mató a Sara')
-    .setAutor(autor1)
     .setCuerpoNota('...')
     .setFechaPublicacion('10/05/2021')
 
 libretaDeNotas.agregarNota(nota1)
 
-var nota2 = new Nota()
+var nota2 = new Nota(autor1)
     .setTitulo('Fecha lanzamiento: 4ta temporada de La casa de papel')
-    .setAutor(autor1)
     .setCuerpoNota('...')
     .setFechaPublicacion('20/05/2021')
 
     libretaDeNotas.agregarNota(nota2)
 
-var nota3 = new Nota()
+var nota3 = new Nota(autor2)
     .setTitulo('Novadedes sobre coronavirus en Europa')
-    .setAutor(autor2)
     .setCuerpoNota('...')
     .setFechaPublicacion('21/05/2021')
 

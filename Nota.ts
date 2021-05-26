@@ -6,9 +6,9 @@ class Nota{
     private cuerpoNota : String
     private fechaPublicacion : String
 
-    constructor(){
+    constructor(autor : Autor){
+        this.autor = autor
         this.titulo = new String
-        this.autor = new Autor
         this.cuerpoNota = new String
         this.fechaPublicacion = new String
     }
@@ -49,12 +49,6 @@ class Nota{
         return this.fechaPublicacion
     }
 
-    /**
-    public agregarALibretaDeNotas(nota : Nota, libretaDeNotass : Nota[]) : Nota[]{
-        libretaDeNotass.push(nota)
-        return libretaDeNotass
-    }
-    */
 }
 
 export default Nota
